@@ -4,7 +4,7 @@
 
 Install python, pip and the opencv-python package.
 
-###In debian-based linux distros:
+### In debian-based linux distros:
 
 sudo apt-get update
 sudo apt-get install python3
@@ -12,12 +12,12 @@ sudo pip install opencv-python
 
 And use apt equivalents in other systems.
 
-###On Windows:
+### On Windows:
 
 Install python form python's website.
 Run pip install opencv-python in cmd or powershell
 
-###Instructions not available for mac
+### Instructions not available for mac
 
 ## SURF usage
 

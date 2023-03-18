@@ -1,4 +1,4 @@
-# Summaries of featur functions
+# Summaries of feature functions
 
 ## Contours
 
@@ -42,7 +42,7 @@
 ### Practical:
 
 - Use the goodFeaturesToTrack in opencv on a grayscale version of your image.
-- Go though each of the corners in the returned list with a for loop and plot every single one on the image with opencv's cirlce function.
+- Go though each of the corners in the returned list with a for loop and plot every single one on the image with opencv's circle function.
 
 ### Theoretical:
 

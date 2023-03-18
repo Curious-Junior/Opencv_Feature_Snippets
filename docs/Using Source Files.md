@@ -17,7 +17,7 @@ And use apt equivalents in other systems.
 Install python form python's website.
 Run pip install opencv-python in cmd or powershell
 
-###Instructions not available for mac
+### Instructions not available for mac
 
 ## SURF usage
 

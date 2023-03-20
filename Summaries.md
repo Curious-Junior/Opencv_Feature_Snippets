@@ -41,7 +41,7 @@
 
 ### Theoretical:
 
-**The mathematical definition of a ridge is very complex, please see ![wikipedia](https://en.wikipedia.org/wiki/Ridge_detection#Computation_of_variable_scale_ridges_from_two-dimensional_images) for a adquate expalanation.**
+**The mathematical definition of a ridge is very complex, please see ![wikipedia](https://en.wikipedia.org/wiki/Ridge_detection#Computation_of_variable_scale_ridges_from_two-dimensional_images) for a adquate expalanation.**  
 The computation of a ridge however is realtively simpler:
 
 - The intensity of a ridge is defined by the following equation:  

@@ -104,14 +104,14 @@ All the steps are identical to Harris corners except the calculation._
 
 - Apply the GaussianBlur function in opencv on your image multiple times with increasing size of blur kernel.
 
-###### These resulting images are called a octave.
+#### These resulting images are called a octave.
 
 - Scale down the image(by a factor of your choice, usually half).
 - Apply GaussianBlur on scaled-down image.
 
-###### This is another octave.
+#### This is another octave.
 
-##### Scale down the image once again and repeat.
+#### _Scale down the image once again and repeat._
 
 ## Generating a DoG(Difference of gaussian)
 
@@ -121,5 +121,3 @@ All the steps are identical to Harris corners except the calculation._
 - Now do the same with the second and third image and so on.
 
 This is to be repeated for each octave.
-
-### Theoretical:

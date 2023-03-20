@@ -56,16 +56,17 @@ The computation of a ridge however is realtively simpler:
 
 - Use the cornerHarris function in opencv on a grayscale version of your image.
 - Dilate the image using opencv's dilate function to make corners visible on image.
-- Use img[dst>0.01*harris.max()]=[0,0,255] to apply a threshold to your corners, resulting in only the good ones remaining.
+- Use _img[dst>0.01*harris.max()]=[0,0,255]_ to apply a threshold to your corners, resulting in only the good ones remaining.
 
 ### Theoretical:
 
 - The first step is to convert the input image to grayscale.
 - Secondly, two derivatives are calculated, one with respect to _x_, $I_x(x,y)$ and one with respect to _y_, $I_y(x,y)$.
 - Then, with derivatives $I_x(x,y)$ and $I_y(x,y)$ a tensor _M_ is constructed.
-- Now, the Harris response calculation is applied to _M_.  
-  A commonly used Harris response calculation is:  
-  ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/3cafac8e1bc8b41dcaa0a480023f3a5015c615e6)
+- Now, the Harris response calculation is applied to _M_.
+
+* A commonly used Harris response calculation is:
+* ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/0d01c963a34e4c36da9e71676384c7fd14e0c14c)
   Where _k_ is an empirically detemined constant; $k \in [0.04, 0.06]$
 
 ## Shi-Tomasi Corners:

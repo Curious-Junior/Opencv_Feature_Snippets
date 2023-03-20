@@ -23,13 +23,13 @@
 - Apply a gaussian blur to input image by convolving over it with a gaussian kernel.
 
 * An gaussian kernel can be generated with the following equation:  
-  ![equation](https://wikimedia.org/api/rest_v1/media/math/render/svg/facbbdfdc3fcdf483b60d4724a64bca8f543929c)
+  $g(x,y,t) = \fraq{1}{2\pi t}\ \euler^-\fraq{x^2+y^2}{2t}\$
 
 * This convolution is performed with a specific scale _t_. This results in a scale-space representation of the image.
 * After that, a Laplacian operator is applied to the images to bring out the blobs.
 * The simplest Laplacian operator in this case is ![equation](https://wikimedia.org/api/rest_v1/media/math/render/svg/6c8c16e05502e5981c20d167047dd620759be7d9).  
   This provides a strong postive response for dark blobs and a strong negative response for bright blobs.  
-  The drawback to this method is that it only detects blobs of size $r^2 = 2t$ or $r^2 = dt$ where $d$ = number of dimensions.
+  The drawback to this method is that it only detects blobs of size $r^2 = 2t$ or $r^2 = dt$ where $d = number of dimensions$.
 * To get multi-scale blobs, the following equation is used: ![equation](https://wikimedia.org/api/rest_v1/media/math/render/svg/e985a7266603c65959e69aafc3af7a45cc88d31c).
 
 ## Ridges:

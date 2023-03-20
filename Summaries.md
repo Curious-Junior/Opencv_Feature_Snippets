@@ -18,6 +18,11 @@
 
 ### Theoretical:
 
+#### The most common approach to blob detection is the Laplacian of Gaussian.
+
+- Apply a gaussian blur to input image by convolving over it with a gaussian kernel.
+  ![equation](https://wikimedia.org/api/rest_v1/media/math/render/svg/facbbdfdc3fcdf483b60d4724a64bca8f543929c)
+
 ## Ridges:
 
 ### Practical:

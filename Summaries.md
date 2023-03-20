@@ -65,7 +65,7 @@ The computation of a ridge however is realtively simpler:
 - Then, with derivatives $I_x(x,y)$ and $I_y(x,y)$ a tensor _M_ is constructed.
 - Now, the Harris response calculation is applied to _M_.
 
-* A commonly used Harris response calculation is:
+* A commonly used Harris response calculation is:  
   $R = \lambda _1 \lambda _2 - k(\lambda _1 + \lambda _2)^2 = det(M) - k{tr}(M)^2$
   Where _k_ is an empirically detemined constant; $k \in [0.04, 0.06]$
 
@@ -77,6 +77,16 @@ The computation of a ridge however is realtively simpler:
 - Go though each of the corners in the returned list with a for loop and plot every single one on the image with opencv's circle function.
 
 ### Theoretical:
+
+- The first step is to convert the input image to grayscale.
+- Secondly, two derivatives are calculated, one with respect to _x_, $I_x(x,y)$ and one with respect to _y_, $I_y(x,y)$.
+- Then, with derivatives $I_x(x,y)$ and $I_y(x,y)$ a tensor _M_ is constructed.
+- Now, the Shi-Tomasi response calculation is applied to _M_.  
+  $R = min(\lambda _1, \lambda _2)$
+  Where _k_ is an empirically detemined constant; $k \in [0.04, 0.06]$
+
+_The Shi-Tomasi response calculation is an altercation of the Harris response calculation.  
+All the steps are identical to Harris corners except the calculation._
 
 ## Blurring image:
 

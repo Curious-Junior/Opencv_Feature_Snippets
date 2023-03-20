@@ -6,8 +6,6 @@
 
 - Apply a threshold to input image and then use the findCountours function in opencv.
 
-### Theoretical:
-
 ## Blobs
 
 ### Practical:
@@ -96,6 +94,10 @@ All the steps are identical to Harris corners except the calculation._
 
 ### Theoretical:
 
+- Convolve over the image with a Gaussian Kernel.  
+  A Gaussian kernel can be generated with the following equation:
+  $g(x,y,t) = \frac{1}{2\pi t}\ e^-\frac{x^2+y^2}{2t}\$
+
 ## Generating a Scale Space:
 
 ### Practical:
@@ -110,8 +112,6 @@ All the steps are identical to Harris corners except the calculation._
 ###### This is another octave.
 
 ##### Scale down the image once again and repeat.
-
-### Theoretical:
 
 ## Generating a DoG(Difference of gaussian)
 

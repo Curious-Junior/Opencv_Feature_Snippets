@@ -30,7 +30,7 @@
 * The simplest Laplacian operator in this case is $\Delta L = L_xx + L_yy$  
   This provides a strong postive response for dark blobs and a strong negative response for bright blobs.  
   The drawback to this method is that it only detects blobs of size $r^2 = 2t$ or $r^2 = dt$ where $d = number of dimensions$.
-* To get multi-scale blobs, the following equation is used: $\Delta ^2 _norm L(x,y;t) = t(L_xx + L_yy)$
+* To get multi-scale blobs, the following equation is used: $\Delta ^2 _norm_ L(x,y;t) = t(L_xx + L_yy)$
 
 ## Ridges:
 

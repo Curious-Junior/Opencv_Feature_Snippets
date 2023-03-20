@@ -27,10 +27,10 @@
 
 * This convolution is performed with a specific scale _t_. This results in a scale-space representation of the image.
 * After that, a Laplacian operator is applied to the images to bring out the blobs.
-* The simplest Laplacian operator in this case is $\Delta L = L_xx + L_yy$  
+* The simplest Laplacian operator in this case is $\Delta L = L_{xx} + L_{yy}$  
   This provides a strong positive response for dark blobs and a strong negative response for bright blobs.  
   The drawback to this method is that it only detects blobs of size $r^2 = 2t$ or $r^2 = dt$ where $d = {number of dimensions}$.
-* To get multi-scale blobs, the following equation is used: $\Delta ^2 _{norm} L(x,y;t) = t(L_{xx} + L_{yy})$
+* To get multi-scale blobs, the following equation is used: $\Delta^2_{norm} L(x,y;t) = t(L_{xx} + L_{yy})$
 
 ## Ridges:
 
@@ -72,7 +72,7 @@
 
 ### Practical:
 
-- Apply the GaussianBlur function in opencv on your image multiple times with inreasing size of blur kernel.
+- Apply the GaussianBlur function in opencv on your image multiple times with increasing size of blur kernel.
 
 ###### These resulting images are called a octave.
 

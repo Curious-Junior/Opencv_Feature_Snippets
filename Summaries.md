@@ -23,7 +23,7 @@
 - Apply a gaussian blur to input image by convolving over it with a gaussian kernel.
 
 * An gaussian kernel can be generated with the following equation:  
-  $g(x,y,t) = \fraq{1}{2\pi t}\ \euler^-\fraq{x^2+y^2}{2t}\$
+  $g(x,y,t) = \frac{1}{2\pi t}\ e^-\frac{x^2+y^2}{2t}\$
 
 * This convolution is performed with a specific scale _t_. This results in a scale-space representation of the image.
 * After that, a Laplacian operator is applied to the images to bring out the blobs.

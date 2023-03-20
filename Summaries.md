@@ -66,7 +66,7 @@ The computation of a ridge however is realtively simpler:
 - Now, the Harris response calculation is applied to _M_.
 
 * A commonly used Harris response calculation is:
-* ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/0d01c963a34e4c36da9e71676384c7fd14e0c14c)
+  $R = \lambda _1 \lambda _2 - k(\lambda _1 + \lambda _2)^2 = det(M) - k{tr}(M)^2$
   Where _k_ is an empirically detemined constant; $k \in [0.04, 0.06]$
 
 ## Shi-Tomasi Corners:

@@ -4,7 +4,15 @@
 
 ### Practical:
 
-- Apply a threshold to input image and then use the findCountours function in opencv.
+* Apply the threshold function in opencv to convert image to binary for better results.
+* Then use the findContours function in opencv on the binary image.
+* Now, plot the contours using the drawContours function in opencv.
+
+### Theoretical:
+
+* Convert the image to binary by applying a threshold as it yields better results.
+* Apply a contour genereation algorithm to detect the contours.  
+  Opencv uses this ![algorithm](https://www.sciencedirect.com/science/article/abs/pii/0734189X85900167)
 
 ## Blobs
 

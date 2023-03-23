@@ -12,7 +12,7 @@
 
 * Convert the image to binary by applying a threshold as it yields better results.
 * Apply a contour genereation algorithm to detect the contours.  
-  Opencv uses this ![algorithm](https://www.sciencedirect.com/science/article/abs/pii/0734189X85900167)
+  Opencv uses this ![algorithm](https://www.sciencedirect.com/science/article/abs/pii/0734189X85900167).
 
 ## Blobs
 
@@ -108,7 +108,7 @@ All the steps are identical to Harris corners except the calculation._
 
 ## Generating a Scale Space:
 
-### Practical:
+### Practical and Theoretical:
 
 - Apply the GaussianBlur function in opencv on your image multiple times with increasing size of blur kernel.
 
@@ -123,7 +123,7 @@ All the steps are identical to Harris corners except the calculation._
 
 ## Generating a DoG(Difference of gaussian)
 
-### Practical:
+### Practical and Theoretical:
 
 - Take the first and second image in a octave and subtract the second one from first using the subtract function in opencv.
 - Now do the same with the second and third image and so on.
